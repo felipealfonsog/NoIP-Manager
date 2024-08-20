@@ -164,9 +164,8 @@ NoIP Manager is available on AUR (Arch User Repository), and it can be installed
    ```
 
 This command will automatically fetch the package from AUR and handle the installation process for you.
-You can find NoIP Manager in your program menu!
+To run the program type 'noip-admin' in the terminal.
 
-<sub>*Under Development</sub>
 
 #
 
