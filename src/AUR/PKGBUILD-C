@@ -17,7 +17,7 @@ prepare() {
 }
 
 build() {
-  cd "$srcdir/NoIP-Manager-${pkgver}/src"
+  cd "$srcdir/NoIP-Manager-v.${pkgver}/src"
   gcc -o noip-admin noip-admin.c
 }
 
@@ -27,7 +27,7 @@ package() {
 
   # Optionally, you can install any other files like an icon or .desktop entry
   # For example:
-  # install -Dm644 "$srcdir"/NoIP-Manager-"${pkgver}"/resources/noipconf-icon.png "${pkgdir}/usr/share/pixmaps/noipconf-c.png"
-  # install -Dm644 "$srcdir"/NoIP-Manager-"${pkgver}"/resources/noipconf.desktop "${pkgdir}/usr/share/applications/noipconf-c.desktop"
+  # install -Dm644 "$srcdir"/NoIP-Manager-v."${pkgver}"/resources/noipconf-icon.png "${pkgdir}/usr/share/pixmaps/noipconf-c.png"
+  # install -Dm644 "$srcdir"/NoIP-Manager-v."${pkgver}"/resources/noipconf.desktop "${pkgdir}/usr/share/applications/noipconf-c.desktop"
 }
 

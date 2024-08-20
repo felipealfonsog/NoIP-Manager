@@ -18,7 +18,7 @@ prepare() {
 
 package() {
   # Install the Python script
-  install -Dm755 "$srcdir"/NoIP-Manager-"${pkgver}"/src/noip-admin.py "${pkgdir}/usr/local/bin/noip-admin.py"
+  install -Dm755 "$srcdir"/NoIP-Manager-v."${pkgver}"/src/noip-admin.py "${pkgdir}/usr/local/bin/noip-admin.py"
   
   # Create a shell script to execute noip-admin.py and copy it to /usr/local/bin
   echo '#!/bin/bash' > noipconf-py
@@ -28,7 +28,7 @@ package() {
 
   # Optionally, you can install any other files like an icon or .desktop entry
   # For example:
-  # install -Dm644 "$srcdir"/NoIP-Manager-"${pkgver}"/resources/noipconf-icon.png "${pkgdir}/usr/share/pixmaps/noipconf-py.png"
-  # install -Dm644 "$srcdir"/NoIP-Manager-"${pkgver}"/resources/noipconf.desktop "${pkgdir}/usr/share/applications/noipconf-py.desktop"
+  # install -Dm644 "$srcdir"/NoIP-Manager-v."${pkgver}"/resources/noipconf-icon.png "${pkgdir}/usr/share/pixmaps/noipconf-py.png"
+  # install -Dm644 "$srcdir"/NoIP-Manager-v."${pkgver}"/resources/noipconf.desktop "${pkgdir}/usr/share/applications/noipconf-py.desktop"
 }
 
