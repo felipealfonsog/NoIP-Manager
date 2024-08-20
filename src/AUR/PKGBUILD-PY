@@ -10,7 +10,7 @@ depends=('python' 'python-pyqt5')
 
 source=("https://github.com/felipealfonsog/NoIP-Manager/archive/refs/tags/v.${pkgver}.tar.gz")
 
-sha256sums=('SKIP') # You can replace 'SKIP' with the actual checksum
+sha256sums=('76e5f742f3e737b580cea52c6dd97df2e4d94a59eb9b410dad1c35306fffb3ec') # the actual checksum
 
 prepare() {
   tar xf "v.${pkgver}.tar.gz" -C "$srcdir" --strip-components=1
