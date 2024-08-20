@@ -1,0 +1,33 @@
+# Maintainer: Felipe Alfonso Gonzalez <f.alfonso@res-ear.ch>
+pkgname=noipconf-c
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="NoIP Manager: A C-based tool to manage No-IP dynamic DNS configurations."
+arch=('x86_64')
+url="https://github.com/felipealfonsog/NoIP-Manager"
+license=('BSD-3-Clause')
+depends=('glibc')
+
+source=("https://github.com/felipealfonsog/NoIP-Manager/archive/refs/tags/v.${pkgver}.tar.gz")
+
+sha256sums=('SKIP') # You can replace 'SKIP' with the actual checksum
+
+prepare() {
+  tar xf "v.${pkgver}.tar.gz" -C "$srcdir" --strip-components=1
+}
+
+build() {
+  cd "$srcdir/NoIP-Manager-${pkgver}/src"
+  gcc -o noip-admin noip-admin.c
+}
+
+package() {
+  # Install the compiled binary
+  install -Dm755 "$srcdir"/NoIP-Manager-"${pkgver}"/src/noip-admin "${pkgdir}/usr/local/bin/noip-admin"
+
+  # Optionally, you can install any other files like an icon or .desktop entry
+  # For example:
+  # install -Dm644 "$srcdir"/NoIP-Manager-"${pkgver}"/resources/noipconf-icon.png "${pkgdir}/usr/share/pixmaps/noipconf-c.png"
+  # install -Dm644 "$srcdir"/NoIP-Manager-"${pkgver}"/resources/noipconf.desktop "${pkgdir}/usr/share/applications/noipconf-c.desktop"
+}
+
