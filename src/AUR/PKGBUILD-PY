@@ -6,7 +6,7 @@ pkgdesc="NoIP Manager: A Python tool with PyQt5 interface to manage No-IP dynami
 arch=('x86_64')
 url="https://github.com/felipealfonsog/NoIP-Manager"
 license=('BSD-3-Clause')
-depends=('python' 'python-pyqt5')
+depends=('python' 'python-pyqt5' 'noip')
 
 source=("https://github.com/felipealfonsog/NoIP-Manager/archive/refs/tags/v.${pkgver}.tar.gz")
 
