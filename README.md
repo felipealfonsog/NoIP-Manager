@@ -3,6 +3,8 @@ A versatile tool for managing No-IP dynamic DNS updates and client operations.
 
 NoIP Manager is a comprehensive utility designed for managing No-IP dynamic DNS updates and client operations. This project provides a flexible and cross-platform solution, allowing users to start, stop, and configure the No-IP Dynamic Update Client. With support for both graphical and command-line interfaces, NoIP Manager facilitates easy interaction with No-IP services, including updating DNS records and checking the status of the client. The project features multiple implementations across different programming languages, ensuring compatibility with various systems and user preferences.
 
+[![Arch Linux AUR](https://img.shields.io/badge/Arch_Linux_AUR-yes-brightgreen)](https://github.com/felipealfonsog/NoIP-Manager?tab=readme-ov-file#via-aur-using-yay)
+
 <sub>* This is currently an experimental phase where the primary focus is on making the system functional and establishing a practical and logical pathway that aligns with both my vision and the project's goals. It might contain errors, bugs, etc. Many other non-core elements of the project are considered secondary.</sub>
 
 ![Version](https://img.shields.io/github/release/felipealfonsog/NoIP-Manager.svg?style=flat&color=blue)
@@ -18,6 +20,7 @@ NoIP Manager is a comprehensive utility designed for managing No-IP dynamic DNS 
 
 [![Vim](https://img.shields.io/badge/--019733?logo=vim)](https://www.vim.org/)
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
+
 
 #
 
