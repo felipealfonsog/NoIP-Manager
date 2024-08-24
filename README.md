@@ -19,7 +19,8 @@ NoIP Manager is a comprehensive utility designed for managing No-IP dynamic DNS 
 -->
 
 [![Vim](https://img.shields.io/badge/--019733?logo=vim)](https://www.vim.org/)
-[![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual-studio-code&logoColor=ffffff)](https://code.visualstudio.com/)
+[![Visual Studio Code](https://badgen.net/badge/icon/Visual%20Studio%20Code?icon=visualstudio&label=)](https://code.visualstudio.com/)
+
 
 
 
